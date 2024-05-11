@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/verdeFundo"
+    >
+
+    <EditText android:id="@+id/nota1"
+        android:hint="Nota 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        android:background="@color/verdeTxt"
+        />
+
+    <EditText android:id="@+id/nota2"
+        android:background="@color/verdeTxt"
+        android:hint="Nota 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        />
+
+    <EditText android:id="@+id/nota3"
+        android:background="@color/verdeTxt"
+        android:hint="Nota 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nota1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        />
+
+    <EditText android:id="@+id/nota4"
+        android:hint="Nota 4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nota2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        android:background="@color/verdeTxt"
+        />
+
+    <EditText android:id="@+id/numFaltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Numero de faltas"
+        app:layout_constraintTop_toBottomOf="@id/nota3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        android:background="@color/verdeTxt"
+        />
+
+    <Button android:id="@+id/botaoCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/numFaltas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Calcular media"
+        android:textAllCaps="false"
+        android:layout_margin="50dp"
+        android:padding="15dp"
+        android:backgroundTint="@color/verdeBotao"
+        />
+
+    <TextView android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/botaoCalc"
+        android:hint="RESULTADO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
